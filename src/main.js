@@ -47,14 +47,14 @@ document.querySelector('#app').innerHTML = `
         <div class="flex items-center gap-2 sm:gap-3">
           <a
             href="#services"
-            class="hidden rounded-lg px-3 py-2 text-sm font-medium text-stone-600 transition hover:bg-stone-100 hover:text-stone-950 dark:text-stone-300 dark:hover:bg-stone-900 dark:hover:text-white sm:inline-flex"
+            class="hidden rounded-lg px-3 py-2 text-sm font-medium text-stone-600 transition hover:bg-stone-100 hover:text-stone-950 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 dark:text-stone-300 dark:hover:bg-stone-900 dark:hover:text-white sm:inline-flex"
           >
             Services
           </a>
 
           <a
             href="#about"
-            class="hidden rounded-lg px-3 py-2 text-sm font-medium text-stone-600 transition hover:bg-stone-100 hover:text-stone-950 dark:text-stone-300 dark:hover:bg-stone-900 dark:hover:text-white sm:inline-flex"
+            class="hidden rounded-lg px-3 py-2 text-sm font-medium text-stone-600 transition hover:bg-stone-100 hover:text-stone-950 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 dark:text-stone-300 dark:hover:bg-stone-900 dark:hover:text-white sm:inline-flex"
           >
             Über
           </a>
@@ -62,7 +62,7 @@ document.querySelector('#app').innerHTML = `
           <button
             type="button"
             data-theme-toggle
-            class="inline-flex h-10 w-10 items-center justify-center rounded-full border border-stone-300 bg-white text-stone-700 shadow-sm transition hover:scale-[1.03] hover:bg-stone-100 hover:text-stone-950 dark:border-stone-700 dark:bg-stone-900 dark:text-stone-200 dark:hover:bg-stone-800 dark:hover:text-white"
+            class="inline-flex h-10 w-10 items-center justify-center rounded-full border border-stone-300 bg-white text-stone-700 shadow-sm transition hover:scale-[1.03] hover:bg-stone-100 hover:text-stone-950 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 dark:border-stone-700 dark:bg-stone-900 dark:text-stone-200 dark:hover:bg-stone-800 dark:hover:text-white"
           >
             <svg data-icon-sun class="h-5 w-5 hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
               <circle cx="12" cy="12" r="4"></circle>
@@ -97,21 +97,21 @@ document.querySelector('#app').innerHTML = `
             <div class="mt-10 flex flex-wrap gap-4">
               <a
                 href="#services"
-                class="inline-flex rounded-xl bg-stone-900 px-5 py-3 text-sm font-medium text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-stone-700 dark:bg-stone-100 dark:text-stone-900 dark:hover:bg-white"
+                class="inline-flex rounded-xl bg-stone-900 px-5 py-3 text-sm font-medium text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-stone-700 hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 dark:bg-stone-100 dark:text-stone-900 dark:hover:bg-white"
               >
                 Services ansehen
               </a>
 
               <a
                 href="#about"
-                class="inline-flex rounded-xl border border-stone-300 px-5 py-3 text-sm font-medium text-stone-800 transition hover:-translate-y-0.5 hover:bg-stone-100 dark:border-stone-700 dark:text-stone-100 dark:hover:bg-stone-900"
+                class="inline-flex rounded-xl border border-stone-300 px-5 py-3 text-sm font-medium text-stone-800 transition hover:-translate-y-0.5 hover:bg-stone-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 dark:border-stone-700 dark:text-stone-100 dark:hover:bg-stone-900"
               >
                 Mehr erfahren
               </a>
             </div>
           </div>
 
-          <aside class="rounded-3xl border border-stone-200 bg-white/80 p-6 shadow-sm backdrop-blur dark:border-stone-800 dark:bg-stone-900/80">
+          <aside class="rounded-3xl border border-stone-200 bg-white/80 p-6 shadow-sm backdrop-blur transition dark:border-stone-800 dark:bg-stone-900/80">
             <p class="text-sm uppercase tracking-[0.18em] text-stone-500 dark:text-stone-400">
               Erste Richtung
             </p>
@@ -157,26 +157,69 @@ document.querySelector('#app').innerHTML = `
         </div>
 
         <div class="mt-12 grid gap-6 md:grid-cols-3">
-          <article class="rounded-2xl border border-stone-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md dark:border-stone-800 dark:bg-stone-900">
+          <article class="rounded-2xl border border-stone-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:border-teal-500/40 hover:shadow-md dark:border-stone-800 dark:bg-stone-900 dark:hover:border-teal-400/40">
+            <div class="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-teal-500/10 text-teal-700 dark:text-teal-300">
+              01
+            </div>
             <h3 class="text-lg font-semibold">Managed Services</h3>
             <p class="mt-3 text-sm leading-6 text-stone-600 dark:text-stone-300">
               Kleine, betreute Dienste statt anonymer Massenhosting-Pakete.
             </p>
           </article>
 
-          <article class="rounded-2xl border border-stone-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md dark:border-stone-800 dark:bg-stone-900">
+          <article class="rounded-2xl border border-stone-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:border-teal-500/40 hover:shadow-md dark:border-stone-800 dark:bg-stone-900 dark:hover:border-teal-400/40">
+            <div class="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-teal-500/10 text-teal-700 dark:text-teal-300">
+              02
+            </div>
             <h3 class="text-lg font-semibold">Persönlicher Support</h3>
             <p class="mt-3 text-sm leading-6 text-stone-600 dark:text-stone-300">
               Direkter Kontakt, kurze Wege und ein klarer, ruhiger Support-Stil.
             </p>
           </article>
 
-          <article class="rounded-2xl border border-stone-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md dark:border-stone-800 dark:bg-stone-900">
+          <article class="rounded-2xl border border-stone-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:border-teal-500/40 hover:shadow-md dark:border-stone-800 dark:bg-stone-900 dark:hover:border-teal-400/40">
+            <div class="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-teal-500/10 text-teal-700 dark:text-teal-300">
+              03
+            </div>
             <h3 class="text-lg font-semibold">Ehrlicher Ausbau</h3>
             <p class="mt-3 text-sm leading-6 text-stone-600 dark:text-stone-300">
               Erst testen, dann sauber erweitern — ohne künstlich aufgeblasenes Versprechen.
             </p>
           </article>
+        </div>
+      </section>
+
+      <section class="mx-auto max-w-6xl px-6 pb-24">
+        <div class="rounded-3xl border border-teal-500/20 bg-teal-500/5 p-8 shadow-sm dark:border-teal-400/20 dark:bg-teal-400/10 sm:p-10">
+          <div class="grid gap-8 lg:grid-cols-[minmax(0,1fr)_18rem] lg:items-center">
+            <div>
+              <p class="text-sm uppercase tracking-[0.18em] text-teal-700 dark:text-teal-300">
+                Noch im Aufbau
+              </p>
+              <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">
+                Erst testen, dann sauber wachsen.
+              </h2>
+              <p class="mt-4 max-w-2xl text-base leading-7 text-stone-600 dark:text-stone-300">
+                Die Marke entsteht gerade Schritt für Schritt. Ziel ist ein ruhiger, fairer Einstieg
+                mit wenigen Services, die später sauber erweitert werden können.
+              </p>
+            </div>
+
+            <div class="flex flex-col gap-3">
+              <a
+                href="#about"
+                class="inline-flex items-center justify-center rounded-xl bg-stone-900 px-5 py-3 text-sm font-medium text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-stone-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 dark:bg-stone-100 dark:text-stone-900 dark:hover:bg-white"
+              >
+                Mehr zur Idee
+              </a>
+              <a
+                href="mailto:hello@cracky.dev"
+                class="inline-flex items-center justify-center rounded-xl border border-stone-300 px-5 py-3 text-sm font-medium text-stone-800 transition hover:-translate-y-0.5 hover:bg-stone-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 dark:border-stone-700 dark:text-stone-100 dark:hover:bg-stone-900"
+              >
+                Interesse halten
+              </a>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -194,12 +237,13 @@ document.querySelector('#app').innerHTML = `
           <div class="rounded-3xl border border-stone-200 bg-stone-100 p-8 shadow-sm dark:border-stone-800 dark:bg-stone-900">
             <p class="text-sm uppercase tracking-[0.18em] text-stone-500 dark:text-stone-400">Kontakt später</p>
             <p class="mt-4 text-base leading-7 text-stone-600 dark:text-stone-300">
-              Im nächsten Schritt können hier Kontakt, Anfrageformular oder später ein Kunden-Login
+              Hier könnte Kontakt, Anfrageformular oder später ein Kunden-Login
               ergänzt werden.
             </p>
           </div>
         </div>
       </section>
+      
     </main>
 
     <footer class="border-t border-stone-200/80 dark:border-stone-800">
